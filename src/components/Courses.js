@@ -109,7 +109,5 @@ const Course = styled.div`
 const Image = styled.img`
     max-width: 100%;
 `
-
-
  
 export default Courses;
