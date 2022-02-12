@@ -14,5 +14,10 @@ const Titulo2 = ({color, fontSize, texto, textAlign}) => {
      );
 }
 
+const Parrafo = ({color, fontSize, texto, textAlign}) => {
+    return(
+        <p  style={{color: color, fontSize: fontSize, textAlign: textAlign}}>{texto}</p>
+    );
+}
  
-export {Titulo, Titulo2};
+export {Titulo, Titulo2, Parrafo};

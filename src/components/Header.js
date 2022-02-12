@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Titulo }from './Titulo';
 
+import { NavLink } from 'react-router-dom';
+
 const Header = () => {
     return ( 
 
@@ -9,6 +11,12 @@ const Header = () => {
 
         <Titulo texto="#NeverStopLearning" color="white" textAlign="center"/>
 
+
+          <Menu>
+            <NavLink to="/" exact={true}>Inicio</NavLink>
+            <NavLink to="/blog">Blog</NavLink>
+            <NavLink to="/acerca-de">Acerca De</NavLink>
+          </Menu>
         
 
       </HeaderContainer>
@@ -24,18 +32,21 @@ const HeaderContainer = styled.header`
 `;
 
 const Menu = styled.nav`
+    text-align: center;
+
     a{
+        text-align: center;
         text-decoration: none;
         color: #1651168;
         margin: 0px 10px;
     } 
 
     a:hover{
-        color: #191668;
+        color: white;
     }
 
     a.active{
-        color: red;
+        color: white;
     }
 `
  
