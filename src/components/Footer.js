@@ -1,9 +1,11 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { NavLink } from 'react-router-dom';
+
 
 const Footer = () => {
     return ( 
-      <MDBFooter color="elegant-color" className="font-small pt-4 mt-4">
+      <MDBFooter color="elegant-color" className="font-small pt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
@@ -16,16 +18,19 @@ const Footer = () => {
             <h5 className="title">Categorias</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Programacion</a>
+                <NavLink to="/categoria/programacion">Programacion</NavLink>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Marketing</a>
+                <NavLink to="/categoria/design">Diseño</NavLink>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Intelifencia Artificial</a>
+                <NavLink to="/categoria/intelifencia-artificial">Intelifencia Artificial</NavLink>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Diseño</a>
+                <NavLink to="/categoria/marketing">Marketing</NavLink>
+              </li>
+              <li className="list-unstyled">
+                <NavLink to="/categoria/otros">Otros</NavLink>
               </li>
             </ul>
           </MDBCol>
@@ -33,16 +38,16 @@ const Footer = () => {
             <h5 className="title">Acerca de</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Proposito</a>
+                <NavLink to="/acerca-de">Proposito</NavLink>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Blog</a>
+                <NavLink to="/blog">Blog</NavLink>
               </li>
               <li className="list-unstyled">
                 <a href="#!">Plataformas de pago</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Publica un curso</a>
+                <NavLink to="/publica-un-curso">Publica un curso</NavLink>
               </li>
             </ul>
           </MDBCol>
