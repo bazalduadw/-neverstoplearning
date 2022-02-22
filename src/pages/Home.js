@@ -9,21 +9,20 @@ const Home = () => {
         <Container>
             
             <MainContainer>
-                <img src={require('../img/logo.png')}/>
+                <img src={require('../img/logo.png')} loading="lazy"/>
                 <Titulo texto="#NeverStopLearning" color="white"/>
-                <Titulo2 texto="Aqui encontraras los mejores cursos con certigicacion gratis" color="white"/>
+                <Titulo2 texto="Aprende programación, diseño, marketing y más gratis" color="white"/>
             </MainContainer>
 
             <AboutContainer>
                 <AboutContainerInfo>
                     <Titulo2 texto="Acerca de" color="white"/>
-                    <Parrafo texto="#NeverStopLearning es una plataforma donde encontraras cursos con certificacion totalmente gratis de empresas como Google, platzi y mas." color="white"/>
+                    <Parrafo texto="#NeverStopLearning es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más." color="white"/>
                 </AboutContainerInfo>
                 <AboutContainerImage>
-                    <img src={require('../img/about-image.png')}/>
+                    <img src={require('../img/about-image.png')} width="300" loading="lazy"/>
                 </AboutContainerImage>
             </AboutContainer>
-
 
             <AllCourses />
 
@@ -56,15 +55,24 @@ const MainContainer = styled.div`
 const AboutContainer = styled.div`
     display: flex;
     padding: 50px 0px 50px 0px;
+    flex-wrap: wrap;
+    
 `
 
 const AboutContainerInfo = styled.div`
     width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 const AboutContainerImage = styled.div`
     width: 50%;
     text-align: center;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 const BlogContainer = styled.div`

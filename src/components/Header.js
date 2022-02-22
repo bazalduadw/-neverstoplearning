@@ -15,7 +15,7 @@ const Header = () => {
           <Menu>
             <NavLink to="/" exact={true}>Inicio</NavLink>
             <NavLink to="/blog">Blog</NavLink>
-            <NavLink to="/acerca-de">Acerca De</NavLink>
+            {/* <NavLink to="/acerca-de">Acerca De</NavLink> */}
           </Menu>
         
 

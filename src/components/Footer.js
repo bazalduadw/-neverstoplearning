@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
-      <MDBFooter color="elegant-color" className="font-small pt-4">
+      <MDBFooter color="elegant-color" className="font-small pt-4 footer-container">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
             <h5 className="title">#NeverStopLearning</h5>
             <p>
-              En este sitio web encontraras los mejores cursos de tecnologias y <br />mas con certificado totalmente gratis.
+            #NeverStopLearning es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más.
             </p>
           </MDBCol>
           <MDBCol md="3">
@@ -24,7 +24,7 @@ const Footer = () => {
                 <NavLink to="/categoria/design">Diseño</NavLink>
               </li>
               <li className="list-unstyled">
-                <NavLink to="/categoria/intelifencia-artificial">Intelifencia Artificial</NavLink>
+                <NavLink to="/categoria/inteligencia-artificial">Intelifencia Artificial</NavLink>
               </li>
               <li className="list-unstyled">
                 <NavLink to="/categoria/marketing">Marketing</NavLink>
@@ -35,16 +35,16 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="3">
-            <h5 className="title">Acerca de</h5>
+            <h5 className="title">#NeverStopLearning</h5>
             <ul>
+              <li className="list-unstyled">
+              <NavLink to="/">Inicio</NavLink>
+              </li>
               <li className="list-unstyled">
                 <NavLink to="/acerca-de">Proposito</NavLink>
               </li>
               <li className="list-unstyled">
                 <NavLink to="/blog">Blog</NavLink>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Plataformas de pago</a>
               </li>
               <li className="list-unstyled">
                 <NavLink to="/publica-un-curso">Publica un curso</NavLink>
@@ -66,3 +66,4 @@ const Footer = () => {
 
  
 export default Footer;
+

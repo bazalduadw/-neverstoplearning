@@ -9,3 +9,15 @@ body{
     margin: 0;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    animation: fadeIn 1700ms ease-in-out 1s both;
+    cursor: pointer;
+}
+
+a:hover{
+    color: white !important;
+}

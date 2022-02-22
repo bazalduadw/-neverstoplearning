@@ -15,37 +15,37 @@ const AllCourses = () => {
     return ( 
 
         <>
+            <Titulo2 texto="Cursos gratis con certificación" color="white" textAlign="center"/>    
+            <ContainerCourses>
 
-        <Titulo2 texto="Cursos gratis con certificación" color="white" textAlign="center"/>    
-        <ContainerCourses>
+            {courses.map( (course) => { return(
+                <Course>
+                    <Card sx={{ maxWidth: 345, minHeigth: 300, bgcolor: '#1a2027' }}>
+                        <CardMedia
+                            component="img"
+                            alt={course.title}
+                            height="140"
+                            image={course.img}
+                            loading="lazy"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="div" color="white">
+                            {course.title}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" color="white">
+                            {course.description}
+                        </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                            <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
+                        </CardActions>
+                    </Card>
+                </Course>
+            )})}
 
-        {courses.map( (course) => { return(
-            <Course>
-                <Card sx={{ maxWidth: 345, minHeigth: 300 }, { bgcolor: '#1a2027' }}>
-                    <CardMedia
-                        component="img"
-                        alt={course.title}
-                        height="140"
-                        image={course.img}
-                    />
-                    <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" color="white">
-                        {course.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary" color="white">
-                        {course.description}
-                    </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
-                        <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
-                    </CardActions>
-                </Card>
-            </Course>
-        )})}
-
-        </ContainerCourses> 
-    </>
+            </ContainerCourses> 
+        </>
     );
 }
 

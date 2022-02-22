@@ -17,7 +17,7 @@ const Course = () => {
         {courses[id_course-1]
         ?   
         <>
-            <Card sx={{ maxWidth: 800, mx: "auto", mt: "1.5rem", mb: "1.5rem"}}>
+            <Card sx={{ maxWidth: 800, mx: "auto", mt: "1.5rem", mb: "1.5rem", bgcolor: '#1a2027'}}>
             <CardMedia
               component="img"
               alt={courses[id_course-1].img}
@@ -25,18 +25,18 @@ const Course = () => {
               image={courses[id_course-1].img}
             />
             <CardContent>
-              <Typography gutterBottom variant="h1" component="div" sx={{ fontSize: 45, textAlign: "center" }}>
+              <Typography gutterBottom variant="h1" component="div" sx={{ fontSize: 45, textAlign: "center", color: "white" }}>
                 {courses[id_course-1].title}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="white">
                 {courses[id_course-1].description}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="white">
                 {courses[id_course-1].descriptionlarge}
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href={courses[id_course-1].url} target="_blank">Ir al curso</Button>
+              <Button size="small" sx={ { bgcolor: 'white' }} href={courses[id_course-1].url} target="_blank">Ir al curso</Button>
             </CardActions>
           </Card>
           </>

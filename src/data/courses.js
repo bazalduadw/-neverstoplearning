@@ -16,7 +16,7 @@ export default [
         description: 'Descubre el mundo del Cloud Computing de la mano de EOI (Escuela de Organización Industrial)',
         descriptionlarge: '¿Sabes qué beneficios aporta el uso de la tecnología Cloud Computing a un proyecto? Descubre a lo largo de este curso sin coste cómo transformar un negocio e innovar dentro de tu empresa a la vez que reduces sus costes. Además, aprende cómo tener acceso a tu información en cualquier dispositivo y de forma segura. Horas: 40',
         company: 'Google',
-        category: 'Servidores',
+        category: 'Otros',
         url: 'https://learndigital.withgoogle.com/activate/course/cloud-computing'
     },
     {
