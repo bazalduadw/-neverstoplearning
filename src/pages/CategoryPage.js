@@ -38,7 +38,7 @@ const Prueba = () => {
                         </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                            <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                             <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                         </CardActions>
                     </Card>
@@ -82,7 +82,7 @@ const CategoryProgramming = () => {
                     </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                        <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                         <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                     </CardActions>
                 </Card>
@@ -123,7 +123,7 @@ const CategoryDesign = () => {
                     </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                        <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                         <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                     </CardActions>
                 </Card>
@@ -162,7 +162,7 @@ const CategoryIA = () => {
                     </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                        <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                         <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                     </CardActions>
                 </Card>
@@ -201,7 +201,7 @@ const CategoryMarketing = () => {
                     </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                        <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                         <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                     </CardActions>
                 </Card>
@@ -240,7 +240,7 @@ const CategoryOthers = () => {
                     </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                        <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                         <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                     </CardActions>
                 </Card>

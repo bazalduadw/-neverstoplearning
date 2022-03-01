@@ -21,3 +21,40 @@ body{
 a:hover{
     color: white !important;
 }
+
+.titulo{
+    font-size: 40px;
+}
+
+.titulo2{
+    font-size: 30px;
+}
+
+ul{
+    margin-bottom: 0px !important;
+}
+
+.img-header{
+    width: 30%;
+}
+
+
+@media screen and (max-width: 900px){
+    .titulo{
+        font-size: 30px;
+    }
+
+    .titulo2{
+        font-size: 20px;
+    }
+
+    .footer-container *{
+        text-align: left;
+    }
+
+    .img-header{
+        width: 20%;
+    }
+}
+
+

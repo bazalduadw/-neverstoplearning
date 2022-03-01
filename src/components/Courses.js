@@ -37,7 +37,7 @@ const AllCourses = () => {
                         </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small" href={course.url} sx={ { bgcolor: 'white' }}>Ir al curso</Button>
+                            <Button size="small" href={course.url} target="_blank" sx={ { bgcolor: 'white' }}>Ir al curso</Button>
                             <Button size="small" sx={ { bgcolor: 'white', ml: 1 }}> <NavLink to={`/course/${course.id_curso}`}>Ver detalles</NavLink></Button>   
                         </CardActions>
                     </Card>
@@ -62,6 +62,8 @@ const Course = styled.div`
     
     @media (max-width: 768px) {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 `
 

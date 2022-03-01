@@ -5,26 +5,26 @@ import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
-      <MDBFooter color="elegant-color" className="font-small pt-4 footer-container">
+      <MDBFooter color="elegant-color" className="font-small pt-4 footer-container footer-container">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">#NeverStopLearning</h5>
+            <h5 className="title">Academia Web</h5>
             <p>
-            #NeverStopLearning es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más.
+            Academia Web es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más.
             </p>
           </MDBCol>
           <MDBCol md="3">
-            <h5 className="title">Categorias</h5>
+            <h5 className="title">Categorías</h5>
             <ul>
               <li className="list-unstyled">
-                <NavLink to="/categoria/programacion">Programacion</NavLink>
+                <NavLink to="/categoria/programacion">Programación</NavLink>
               </li>
               <li className="list-unstyled">
                 <NavLink to="/categoria/design">Diseño</NavLink>
               </li>
               <li className="list-unstyled">
-                <NavLink to="/categoria/inteligencia-artificial">Intelifencia Artificial</NavLink>
+                <NavLink to="/categoria/inteligencia-artificial">Inteligencia Artificial</NavLink>
               </li>
               <li className="list-unstyled">
                 <NavLink to="/categoria/marketing">Marketing</NavLink>
@@ -35,7 +35,7 @@ const Footer = () => {
             </ul>
           </MDBCol>
           <MDBCol md="3">
-            <h5 className="title">#NeverStopLearning</h5>
+            <h5 className="title">Academia Web</h5>
             <ul>
               <li className="list-unstyled">
               <NavLink to="/">Inicio</NavLink>
@@ -56,7 +56,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} #NeverStopLearning <a href="https://luisbazaldua.com"> luisbazaldua.com </a>
+          &copy; {new Date().getFullYear()} Academia Web <a href="https://luisbazaldua.com"> luisbazaldua.com </a>
         </MDBContainer>
       </div>
     </MDBFooter>

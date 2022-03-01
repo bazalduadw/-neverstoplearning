@@ -1,53 +1,83 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Titulo }from './Titulo';
-
+import React, { useState } from "react";
+import {
+  ContainerFullWidth,
+  Container,
+  LogoContainer,
+  Wrapper,
+  Menu,
+  MenuItem,
+  MenuItemLink,
+  MobileIcon
+} from "./Navbar.elements";
+import {
+  FaBattleNet,
+  FaBars,
+  FaTimes,
+  FaHome,
+  FaUserAlt,
+  FaBriefcase,
+  FaGlasses,
+} from "react-icons/fa";
+import { IconContext } from "react-icons";
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-    return ( 
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-      <HeaderContainer>
+  return (
+    <ContainerFullWidth>
+    <Container>
+      <Wrapper>
+        <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
+          <LogoContainer>
+            <NavLink to="/" exact={true}>
+              <img src={require('../img/logo.png')} loading="lazy" className="img-header"/>
+            </NavLink>
+          </LogoContainer>
 
-        <Titulo texto="#NeverStopLearning" color="white" textAlign="center"/>
+          <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
+            {showMobileMenu ? <FaTimes /> : <FaBars />}
+          </MobileIcon>
 
-
-          <Menu>
-            <NavLink to="/" exact={true}>Inicio</NavLink>
-            <NavLink to="/blog">Blog</NavLink>
-            {/* <NavLink to="/acerca-de">Acerca De</NavLink> */}
+          <Menu open={showMobileMenu}>
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div>
+                  <FaHome />
+                  <NavLink to="/" exact={true}>Inicio</NavLink>
+                </div>
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div>
+                  <FaUserAlt />
+                  <NavLink to="/acerca-de">Proposito</NavLink>
+                </div>
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div>
+                  <FaBriefcase />
+                  <NavLink to="/blog">Blog</NavLink>
+                </div>
+              </MenuItemLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <div>
+                  <FaGlasses />
+                  <NavLink to="/puclica-un-curso">Publica</NavLink>
+                </div>
+              </MenuItemLink>
+            </MenuItem>
           </Menu>
-        
+        </IconContext.Provider>
+      </Wrapper>
+    </Container>
+    </ContainerFullWidth>
+  );
+};
 
-      </HeaderContainer>
-
-    );
-}
-
-const HeaderContainer = styled.header`
-  width: 100%;
-  background: #252525;
-  margin: 0 auto;
-  padding: 0px;
-`;
-
-const Menu = styled.nav`
-    text-align: center;
-
-    a{
-        text-align: center;
-        text-decoration: none;
-        color: #1651168;
-        margin: 0px 10px;
-    } 
-
-    a:hover{
-        color: white;
-    }
-
-    a.active{
-        color: white;
-    }
-`
- 
 export default Header;

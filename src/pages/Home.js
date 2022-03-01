@@ -10,14 +10,14 @@ const Home = () => {
             
             <MainContainer>
                 <img src={require('../img/logo.png')} loading="lazy"/>
-                <Titulo texto="#NeverStopLearning" color="white"/>
+                <Titulo texto="Academia Web" color="white"/>
                 <Titulo2 texto="Aprende programación, diseño, marketing y más gratis" color="white"/>
             </MainContainer>
 
             <AboutContainer>
                 <AboutContainerInfo>
                     <Titulo2 texto="Acerca de" color="white"/>
-                    <Parrafo texto="#NeverStopLearning es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más." color="white"/>
+                    <Parrafo texto="Academia Web es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más." color="white"/>
                 </AboutContainerInfo>
                 <AboutContainerImage>
                     <img src={require('../img/about-image.png')} width="300" loading="lazy"/>
@@ -50,12 +50,18 @@ const MainContainer = styled.div`
     text-align: center;
     background-color: #1a2027;
     padding: 50px 0px 50px 0px;
+    @media (max-width: 768px) {
+        margin: 75px 35px 35px 35px;
+    }
 `;
 
 const AboutContainer = styled.div`
     display: flex;
     padding: 50px 0px 50px 0px;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+        margin: 35px;
+    }
     
 `
 
@@ -81,6 +87,10 @@ const BlogContainer = styled.div`
     text-align: center;
     background-color: #1a2027;
     padding: 50px 0px 50px 0px;
+    @media (max-width: 768px) {
+        margin: 35px;
+    }
+
 `;
  
 export default Home;
