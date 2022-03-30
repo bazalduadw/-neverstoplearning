@@ -9,9 +9,9 @@ const Footer = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Academia Web</h5>
+            <h5 className="title">AcadeInn</h5>
             <p>
-            Academia Web es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más.
+            AcadeInn es un sitio web con el propósito de promover la educación gratuita en línea con cursos y recursos gratis para aprender sobre programación, diseño, marketing y más.
             </p>
           </MDBCol>
           <MDBCol md="3">
@@ -49,6 +49,9 @@ const Footer = () => {
               <li className="list-unstyled">
                 <NavLink to="/publica-un-curso">Publica un curso</NavLink>
               </li>
+              <li className="list-unstyled">
+                <NavLink to="/donaciones">Donaciones</NavLink>
+              </li>
             </ul>
           </MDBCol>
           
@@ -56,7 +59,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Academia Web <a href="https://luisbazaldua.com"> luisbazaldua.com </a>
+          &copy; {new Date().getFullYear()} AcadeInn <a href="https://luisbazaldua.com"> luisbazaldua.com </a>
         </MDBContainer>
       </div>
     </MDBFooter>

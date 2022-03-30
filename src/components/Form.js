@@ -41,9 +41,9 @@ const Form = () => {
                 <InputText type="text" name="url del curso" value={url} onChange={(e) => cambiarUrl(e.target.value)} placeholder="url del curso"/>
                 <Select placeholder='categoria' value={categoria} onChange={(e) => cambiarCategoria(e.target.value)} >
                     <option value="" disabled="disabled">Categoria</option>
-                    <option value="programacion">programacion</option>
-                    <option value="marketing">marketing</option>
-                    <option value="diseño">diseño</option>
+                    <option value="programacion">Programacion</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="diseño">Diseño</option>
                 </Select>
                 <button type='submit'>Enviar</button>
             </ContainerForm> 

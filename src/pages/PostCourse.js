@@ -7,13 +7,7 @@ const PostCourse = () => {
     return ( 
         <>
 
-        {/* <Form /> */}
-
-        <Container>
-        
-            <Titulo texto="Proximamente..." textAlign="Center" color="white"/>
-        
-        </Container>
+       <Form />
 
         </>
     );

@@ -10,7 +10,6 @@ import {
   MobileIcon
 } from "./Navbar.elements";
 import {
-  FaBattleNet,
   FaBars,
   FaTimes,
   FaHome,
@@ -30,7 +29,7 @@ const Header = () => {
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
           <LogoContainer>
-            <NavLink to="/" exact={true}>
+            <NavLink to="/" >
               <img src={require('../img/logo.png')} loading="lazy" className="img-header"/>
             </NavLink>
           </LogoContainer>
@@ -44,7 +43,7 @@ const Header = () => {
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
                   <FaHome />
-                  <NavLink to="/" exact={true}>Inicio</NavLink>
+                  <NavLink to="/" >Inicio</NavLink>
                 </div>
               </MenuItemLink>
             </MenuItem>
@@ -68,7 +67,7 @@ const Header = () => {
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
                   <FaGlasses />
-                  <NavLink to="/puclica-un-curso">Publica</NavLink>
+                  <NavLink to="/publica-un-curso">Publica</NavLink>
                 </div>
               </MenuItemLink>
             </MenuItem>

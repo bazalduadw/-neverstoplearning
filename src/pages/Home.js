@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Banner from '../components/Banner';
 import { AllCourses } from '../components/Courses';
 import { Parrafo, Titulo, Titulo2 } from '../components/Titulo';
 
@@ -10,14 +9,14 @@ const Home = () => {
             
             <MainContainer>
                 <img src={require('../img/logo.png')} loading="lazy"/>
-                <Titulo texto="Academia Web" color="white"/>
-                <Titulo2 texto="Aprende programación, diseño, marketing y más gratis" color="white"/>
+                <Titulo texto="AcadeInn" color="white"/>
+                <Titulo2 texto="Aprende programación, diseño, marketing y más" color="white"/>
             </MainContainer>
 
             <AboutContainer>
                 <AboutContainerInfo>
                     <Titulo2 texto="Acerca de" color="white"/>
-                    <Parrafo texto="Academia Web es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más." color="white"/>
+                    <Parrafo texto="AcadeInn es una plataforma donde encontraras recursos sobre programación, diseño, marketing y más. También cursos con certificación totalmente gratis de empresas como Google, Platzi y más." color="white"/>
                 </AboutContainerInfo>
                 <AboutContainerImage>
                     <img src={require('../img/about-image.png')} width="300" loading="lazy"/>
@@ -29,11 +28,8 @@ const Home = () => {
             <BlogContainer>
                 <Titulo2 texto="Blog proximamente..." color="white"/>
             </BlogContainer>
-
-
         </Container>
-        
-
+    
      );
 }
 
@@ -61,9 +57,8 @@ const AboutContainer = styled.div`
     flex-wrap: wrap;
     @media (max-width: 768px) {
         margin: 35px;
-    }
-    
-`
+    }    
+`;
 
 const AboutContainerInfo = styled.div`
     width: 50%;
@@ -71,7 +66,7 @@ const AboutContainerInfo = styled.div`
     @media (max-width: 768px) {
         width: 100%;
     }
-`
+`;
 
 const AboutContainerImage = styled.div`
     width: 50%;
@@ -79,7 +74,7 @@ const AboutContainerImage = styled.div`
     @media (max-width: 768px) {
         width: 100%;
     }
-`
+`;
 
 const BlogContainer = styled.div`
     border-radius: 4px;

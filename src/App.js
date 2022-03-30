@@ -11,6 +11,8 @@ import { CategoryDesign, CategoryIA, CategoryMarketing, CategoryOthers, Category
 import Blog from './pages/Blog';
 import ScrollToTop from './components/ScrollToTop';
 import ButtonToTop from './components/ButtonToTop';
+import Donations from './pages/Donations';
+import Requests from './pages/Requests';
 
 function App() {
 
@@ -31,6 +33,8 @@ function App() {
           <Route path='/blog' element={<Blog />}/>
           <Route path="/acerca-de" element={<About/>}/>
           <Route path='/publica-un-curso' element={<PostCourse />}/>
+          <Route path='/donaciones' element={<Donations />} />
+          <Route path='/requests' element={<Requests />} />
         </Routes>
         <Footer />
       </BrowserRouter>
